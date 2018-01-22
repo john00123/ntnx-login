@@ -1,0 +1,127 @@
+//Comment for compiler
+@import '../../_ntnx/variables';
+@import '../../_ntnx/mixins';
+html{
+  @include font;
+  background-color: $background-color-3;
+}
+body{
+  @include flex(center, center, column);
+  @include size(100vh, 100%);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+h1{
+  font-weight: 200;
+  line-height: 16px;
+  font-size: 24px;
+  margin: 0;
+}
+
+p{
+  color:$font-color-2;
+  line-height: 9pt;
+}
+
+input{
+  @include size(32px, 100%);
+  border: 1px solid $border-color-1;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  &:focus{
+    outline: none;
+    border-color: $blue-1;
+  }
+}
+
+label{
+  display: flex;
+  color:$font-color-2;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.separator{
+  @include size(1px, 100%);
+  border-bottom: 1px solid $border-color-3;
+  margin: 15px 0;
+}
+
+.container{
+  @include size(auto, 350px);
+  position: relative;
+  @include shadow;
+  padding: 50px 30px;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 40px;
+  @include flex(flex-start, stretch, column);
+}
+
+button{
+  @include primary;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.names{
+  @extend h1;
+  margin: 0;
+  position: absolute;
+  pointer-events: none;
+  top:38px;
+  left:120px;
+  decoration:none;
+  overflow: scroll;
+  height: 50px;
+  line-height: 40px;
+  li{list-style: none;}
+  ul:first-child{
+    margin-top: 0;
+  }
+  ul{margin-bottom: 0;}
+
+}
+
+.w-sep{
+  text-align: center;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.inline-separator{
+  @include size(15px, 100%);
+  border-bottom: 1px solid $border-color-3;
+  margin: 10px 0;
+}
+
+.space-between{
+  @include flex(center, space-between, row);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.secondary{
+  @include secondary;
+  &:hover, &:active{
+    background-color:white;
+  }
+}
+
+span{
+  @include link;
+  font-size: 12px;
+  font-weight: 500;
+}
