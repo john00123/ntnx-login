@@ -39,6 +39,11 @@ input {
   height: 32px;
   width: 100%;
   box-sizing: border-box;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   border: 1px solid #B8BFCA;
   font-size: 14px;
   border-radius: 4px;
