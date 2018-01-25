@@ -121,6 +121,15 @@ button{
   }
 }
 
+.circle{
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  @include size(50px, 50px);
+  background: url('../img/xi.svg');
+  border-radius: 4pc
+}
+
 span{
   @include link;
   font-size: 12px;

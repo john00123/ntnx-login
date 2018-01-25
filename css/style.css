@@ -206,6 +206,17 @@ button span {
   background-color: white;
 }
 
+.circle {
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  background: url("../img/xi.svg");
+  border-radius: 4pc;
+}
+
 span {
   color: #22A5F7;
   font: 400 14px/10px "nutanix_soft", san-serif;
