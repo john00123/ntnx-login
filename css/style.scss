@@ -19,6 +19,7 @@ h1{
   line-height: 16px;
   font-size: 24px;
   margin: 0;
+  letter-spacing: 0.4;
 }
 
 p{
@@ -73,6 +74,7 @@ button{
   @include primary;
   margin-top: 30px;
   width: 100%;
+  font-weight: 500;
 }
 
 .names{

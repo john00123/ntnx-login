@@ -1,30 +1,23 @@
 const signUp =
 `<div class='container' style='display:none'>
-  <h1>Not Welcome to</h1>
-  <div class='names' id='names'>
-    <ul id='motion'>
-      <li>Nutanix</li>
-      <li>Prism</li>
-      <li>CE</li>
-      <li>Support</li>
-      <li>Partners</li>
-      <li>Sizer</li>
-      <li style= 'margin-bottom','0'>Xi</li>
-    </ul>
-  </div>
 
+  <h1> Create an account </h1>
 
-  <!-- <p>One login for all you nutanix properties</p> -->
-  <!-- <div class='separator'></div> -->
-  <label style='margin-top:30px'for="username">Username</label>
-  <input type="text" name="username" id="username">
+  <label style='margin-top:30px'for="firstname">First Name</label>
+  <input type="text" name="firstname" id="firstname">
 
-  <label for="password">Password<span class='forgot'>Forgot Password?</span></label>
+  <label for="lastname">Last Name</label>
+  <input type="text" name="lastname" id="lastname">
+
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email">
+
+  <label for="password">Password</label>
   <input type="password" name="password" id="password">
 
-  <button class='login'> Log In </button>
-  <div class='space-between'><div class='inline-separator'></div><p class='w-sep'> New to nutanix ?</p><div class='inline-separator'></div></div>
-  <button class='secondary signup'> Sign Up </button>
+  <button class='back'> Create account </button>
+  <div class='space-between'><div class='inline-separator'></div><p class='w-sep'> Already have an account?</p><div class='inline-separator'></div></div>
+  <button class='secondary signup'> Log In </button>
 </div>`
 
 
