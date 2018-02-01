@@ -1,7 +1,7 @@
 const signUp =
 `<div class='container' style='display:none'>
 
-  <h1> Create an account </h1>
+  <h1 style='font-size:22px; margin-bottom:10px;'>Create a Nutanix account</h1>
 
   <label style='margin-top:30px'for="firstname">First Name</label>
   <input type="text" name="firstname" id="firstname">
@@ -27,14 +27,19 @@ $(document).ready(function() {
   $('#names').scroll();
   $("#names").animate({
     scrollTop: 240
-  }, 2500, 'easeInOutSine');}, 1200)
+  }, 2500, 'easeInOutSine', function(){
+    $('.names').after('<div class="circle"></div>');
+    $('.circle').slideDown(600);
+  })}, 1200);
 
   $('.signup, .forgot, .login').click(function(){
     $('.container').fadeOut('slow',
     function(){
       $('.container').remove();
       $('body').prepend(signUp);
-      $('.container').fadeIn('slow');
+      setTimeout(function () {
+        $('.container').fadeIn('slow');
+      }, 300);
     });
 
     console.log($(this).text());

@@ -74,13 +74,14 @@ label {
   width: 100%;
   box-sizing: border-box;
   border-bottom: 1px solid #F2F4F6;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .container {
   height: auto;
   width: 350px;
   box-sizing: border-box;
+  min-height: 460px;
   position: relative;
   box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
   padding: 50px 30px;
@@ -128,14 +129,15 @@ button span {
 
 .names {
   margin: 0;
-  position: absolute;
+  position: relative;
   pointer-events: none;
-  top: 38px;
-  left: 120px;
+  top: -28px;
+  left: 92px;
   decoration: none;
   overflow: scroll;
   height: 50px;
   line-height: 40px;
+  margin-bottom: -30px;
 }
 
 .names li {
@@ -209,14 +211,19 @@ button span {
 }
 
 .circle {
-  margin-top: 20px;
-  display: flex;
+  margin: 0;
+  display: none;
   align-self: center;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 100%;
   box-sizing: border-box;
-  background: url("../img/xi.svg");
-  border-radius: 4pc;
+  padding: 40px;
+  background: url("../img/xi3.svg");
+  background-color: #F2F4F6;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 span {
