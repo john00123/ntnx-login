@@ -7,6 +7,17 @@ html {
   background-color: #F2F4F6;
 }
 
+a {
+  color: #22A5F7;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -81,7 +92,7 @@ label {
   height: auto;
   width: 350px;
   box-sizing: border-box;
-  min-height: 460px;
+  min-height: 300px;
   position: relative;
   box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
   padding: 50px 30px;
@@ -99,7 +110,7 @@ button {
   border-radius: 4px;
   padding: 11px 15px;
   color: #FFFFFF;
-  font: 400 14px/10px "nutanix_soft", san-serif;
+  font: 500 14px/10px "nutanix_soft", san-serif;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;
@@ -171,21 +182,20 @@ button span {
 .space-between {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .secondary {
+  background-color: #FFFFFF;
   border: 1px solid #D5DAE0;
   border-radius: 4px;
   padding: 11px 15px;
+  font: 500 14px/10px "nutanix_soft", san-serif;
   color: #22272E;
-  font: 400 14px/10px "nutanix_soft", san-serif;
   text-decoration: none;
-  background-color: #FFFFFF;
   margin: 0;
   outline: none;
 }
@@ -197,13 +207,6 @@ button span {
 
 .secondary:active {
   color: #91d2fb;
-}
-
-.secondary span {
-  height: 10px;
-  display: block;
-  font-weight: 500;
-  line-height: 9pt;
 }
 
 .secondary:hover, .secondary:active {
